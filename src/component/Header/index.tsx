@@ -4,7 +4,7 @@ import Image from "next/image";
 function Header() {
   const router = useRouter();
   const onConnect = () => {
-    router.push("/create");
+    router.push("/post");
   };
   return (
     <>
