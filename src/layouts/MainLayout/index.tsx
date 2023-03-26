@@ -10,7 +10,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
       <div
-        className="h-screen overflow-hidden relative flex flex-col"
+        className="lg:h-screen relative flex flex-col overflow-auto"
         style={{
           background: `linear-gradient(180deg, #2D2D2D 0%, #4B4B4B 100%)`,
         }}
