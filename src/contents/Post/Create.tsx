@@ -30,12 +30,12 @@ export const Create = () => {
             <Image
               alt="imgview"
               src="/static/images/icons/imgview.png"
-              className="z-10 ml-[12px] 2xl:w-[40px] xl:w-[30px] w-[28px] 2xl:h-[40px] xl:h-[30px] h-[28px]"
+              className="z-10 ml-[12px] 2xl:w-[40px] xl:w-[30px] w-[28px] 2xl:h-[40px] xl:h-[30px] h-[28px] cursor-pointer"
               width={40}
               height={40}
             />
           </div>
-          <div className="flex justify-center items-center rounded-[12px] 2xl:w-[100px] w-[80px] 2xl:h-[40px] h-[28px] bg-formback border-[2px] border-borderwhite z-10 text-textwhite font-[700] 2xl:text-[20px] xl:text-[18px] text-[14px]">
+          <div className="flex justify-center items-center rounded-[12px] 2xl:w-[100px] w-[80px] 2xl:h-[40px] h-[28px] bg-formback border-[2px] border-borderwhite z-10 text-textwhite font-[700] 2xl:text-[20px] xl:text-[18px] text-[14px] cursor-pointer">
             POST
           </div>
         </div>
