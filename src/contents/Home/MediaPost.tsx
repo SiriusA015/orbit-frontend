@@ -1,4 +1,11 @@
+import { useRouter } from "next/router";
+
 export const MediaPost = () => {
+  const router = useRouter();
+  const onPost = () => {
+    router.push("/post");
+  };
+
   return (
     <>
       <div
@@ -43,7 +50,10 @@ export const MediaPost = () => {
             }}
           />
         </div>
-        <div className="2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px] bg-formback rounded-[13px] mx-auto border-[2px] border-[#949494] flex justify-center items-center font-Inter font-[600] text-textwhite 2xl:text-[18px] xl:text-[16px] text-[12px] cursor-pointer">
+        <div
+          className="2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px] bg-formback rounded-[13px] mx-auto border-[2px] border-[#949494] flex justify-center items-center font-Inter font-[600] text-textwhite 2xl:text-[18px] xl:text-[16px] text-[12px] cursor-pointer"
+          onClick={onPost}
+        >
           POST
         </div>
       </div>

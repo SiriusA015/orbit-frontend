@@ -4,8 +4,9 @@ import Image from "next/image";
 function Header() {
   const router = useRouter();
   const onConnect = () => {
-    router.push("/post");
+    router.push("/auth/login");
   };
+
   return (
     <>
       <div className="2xl:h-[120px] h-[90px] flex justify-between items-center 2xl:px-[172px] xl:px-[140px] lg:px-[100px] md:px-[60px] px-[30px] relative">
