@@ -1,6 +1,7 @@
 import { BaseLayout } from "../../layouts/BaseLayout";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -86,6 +87,19 @@ const LoginPage = () => {
                 onClick={onLogin}
               >
                 LOGIN
+              </div>
+              <div
+                className="absolute bottom-[13px] right-[23px] font-[600] text-[12px]"
+                style={{ color: "rgba(244, 244, 244, 0.5)" }}
+              >
+                DON’T HAVE AN ACCOUNT?{" "}
+                <Link
+                  href={"/auth/signup"}
+                  className="italic"
+                  style={{ color: "rgba(244, 244, 244, 0.8)" }}
+                >
+                  SIGN UP
+                </Link>
               </div>
             </div>
           </div>
