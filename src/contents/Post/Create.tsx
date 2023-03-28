@@ -1,3 +1,4 @@
+import ButtonPrimary from "component/Button/ButtonPrimary";
 import Image from "next/image";
 
 export const Create = () => {
@@ -35,9 +36,13 @@ export const Create = () => {
               height={40}
             />
           </div>
-          <div className="flex justify-center items-center rounded-[12px] 2xl:w-[100px] w-[80px] 2xl:h-[40px] h-[28px] bg-formback border-[2px] border-borderwhite z-10 text-textwhite font-[700] 2xl:text-[20px] xl:text-[18px] text-[14px] cursor-pointer">
+          <ButtonPrimary
+            sizeClass="2xl:w-[100px] w-[80px] 2xl:h-[40px] h-[28px]"
+            fontSize="font-[700] 2xl:text-[20px] xl:text-[18px] text-[14px]"
+            className="rounded-[12px] z-10"
+          >
             POST
-          </div>
+          </ButtonPrimary>
         </div>
       </div>
     </>

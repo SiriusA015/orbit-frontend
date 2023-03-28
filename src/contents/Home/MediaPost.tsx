@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import ButtonPrimary from "component/Button/ButtonPrimary";
 
 export const MediaPost = () => {
   const router = useRouter();
@@ -30,13 +31,21 @@ export const MediaPost = () => {
           <div className="font-Inter font-[600] text-[#F4F4F4] 2xl:text-[26px] xl:text-[22px] text-[16px] z-10">
             MEDIA UPLOAD:
           </div>
-          <div className="2xl:w-[145px] xl:w-[120px] w-[96px] 2xl:h-[43px] xl:h-[38px] h-[30px] bg-formback border-[2px] border-[#949494] rounded-[20px] cursor-pointer font-Inter font-[500] text-textwhite 2xl:text-[14px] text-[12px] flex justify-center items-center z-10">
+          <ButtonPrimary
+            sizeClass="2xl:w-[145px] xl:w-[120px] w-[96px] 2xl:h-[43px] xl:h-[38px] h-[30px]"
+            fontSize="font-Inter font-[600] 2xl:text-[14px] text-[12px]"
+            className="rounded-[20px] z-10"
+          >
             BROWSE FILES
-          </div>
+          </ButtonPrimary>
         </div>
-        <div className="xl:absolute 2xl:top-[170px] top-[190px] 2xl:right-[18px] right-[2px] 2xl:w-[100px] xl:w-[100px] w-[100px] 2xl:h-[60px] h-[40px] bg-formback rounded-[20px] mx-auto border-[2px] border-[#949494] flex justify-center items-center text-white 2xl:text-[16px] xl:text-[14px] text-[14px] font-[600] cursor-pointer">
+        <ButtonPrimary
+          sizeClass="2xl:top-[170px] top-[190px] 2xl:right-[18px] right-[2px] 2xl:w-[100px] xl:w-[100px] w-[100px] 2xl:h-[60px] h-[40px]"
+          fontSize="2xl:text-[16px] xl:text-[14px] text-[14px] font-[600]"
+          className="xl:absolute mx-auto rounded-[20px] z-10"
+        >
           ADD TAG(S)
-        </div>
+        </ButtonPrimary>
         <div className="relative w-full h-[220px] rounded-[20px] flex flex-col items-center justify-center">
           <div className="absolute top-0 left-0 w-full h-full bg-formback rounded-[20px] blur-[3px]"></div>
           <div className="font-Inter font-[600] text-[#F4F4F4] 2xl:text-[28px] xl:text-[24px] text-[18px] z-10">
@@ -52,12 +61,14 @@ export const MediaPost = () => {
             <div className="absolute w-full h-full top-0 left-0 rounded-[20px] bg-[#BFBFBF] blur-[2px] z-1"></div>
           </div>
         </div>
-        <div
-          className="2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px] bg-formback rounded-[13px] mx-auto border-[2px] border-[#949494] flex justify-center items-center font-Inter font-[600] text-textwhite 2xl:text-[18px] xl:text-[16px] text-[12px] cursor-pointer"
+        <ButtonPrimary
+          sizeClass="2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px]"
+          fontSize="font-Inter font-[600] text-textwhite 2xl:text-[18px] xl:text-[16px] text-[12px]"
+          className="mx-auto rounded-[13px]"
           onClick={onPost}
         >
           POST
-        </div>
+        </ButtonPrimary>
       </div>
     </>
   );

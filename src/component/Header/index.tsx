@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import ButtonPrimary from "component/Button/ButtonPrimary";
 
 function Header() {
   const router = useRouter();
@@ -38,12 +39,14 @@ function Header() {
             }}
           />
         </div>
-        <div
-          className="mt-[10px] flex justify-center items-center bg-formback border-[1px] border-borderwhite rounded-[20px] 2xl:w-[170px] w-[120px] 2xl:h-[60px] h-[40px] font-[600] 2xl:text-[16px] text-[12px] text-textwhite cursor-pointer"
+        <ButtonPrimary
+          sizeClass="mt-[10px] 2xl:w-[170px] w-[120px] 2xl:h-[60px] h-[40px]"
+          fontSize="font-[600] 2xl:text-[16px] text-[12px]"
+          className="rounded-[20px]"
           onClick={onConnect}
         >
           CONNECT WALLET
-        </div>
+        </ButtonPrimary>
         <div className="absolute w-screen left-0 bottom-0 border-[1px] border-[#CCCCCC]"></div>
       </div>
     </>

@@ -26,19 +26,19 @@ export const VideoInfo = () => {
           TAGS:
         </div>
         <div className="flex justify-center items-center lg:gap-[45px] md:gap-[30px] gap-[20px] mt-[20px] lg:mb-0 mb-[20px]">
-          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px] cursor-pointer">
+          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px]">
             <div className="absolute w-full h-full top-0 left-0 2xl:rounded-[20px] xl:rounded-[14px] rounded-[12px] border-[2px] border-borderwhite bg-formback blur-[2px]"></div>
             <div className="font-[700] 2xl:text-[20px] xl:text-[16px] text-[12px] text-textwhite z-20">
               COMEDY
             </div>
           </div>
-          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px] cursor-pointer">
+          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px]">
             <div className="absolute w-full h-full top-0 left-0 2xl:rounded-[20px] xl:rounded-[14px] rounded-[12px] border-[2px] border-borderwhite bg-formback blur-[2px]"></div>
             <div className="font-[700] 2xl:text-[20px] xl:text-[16px] text-[12px] text-textwhite z-20">
               NFTs
             </div>
           </div>
-          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px] cursor-pointer">
+          <div className="2xl:w-[121px] xl:w-[100px] w-[60px] 2xl:h-[64px] xl:h-[50px] h-[40px] flex justify-center items-center relative p-[12px]">
             <div className="absolute w-full h-full top-0 left-0 2xl:rounded-[20px] xl:rounded-[14px] rounded-[12px] border-[2px] border-borderwhite bg-formback blur-[2px]"></div>
             <div className="font-[700] 2xl:text-[20px] xl:text-[16px] text-[12px] text-textwhite z-20">
               WEB3

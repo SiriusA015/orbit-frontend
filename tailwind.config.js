@@ -18,6 +18,7 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'formback': 'rgba(30, 30, 30, 0.7)',
+      'formbackhover': 'rgba(50, 50, 50, 0.7)',
       'formback1': 'rgba(30, 30, 30, 0.5)',
       'textwhite': '#F4F4F4',
       'borderwhite': '#949494',

@@ -12,7 +12,7 @@ export const UserVideo = () => {
       <Image
         alt="up"
         src="/static/images/icons/up.png"
-        className="mx-auto 2xl:w-[80px] xl:w-[70px] w-[60px] 2xl:h-[80px] xl:h-[70px] h-[60px] cursor-pointer"
+        className="mx-auto 2xl:w-[80px] xl:w-[70px] w-[60px] 2xl:h-[80px] xl:h-[70px] h-[60px] cursor-pointer hover:scale-[1.05]"
         width={80}
         height={80}
       />
@@ -47,7 +47,7 @@ export const UserVideo = () => {
       <Image
         alt="down"
         src="/static/images/icons/down.png"
-        className="mx-auto 2xl:w-[80px] xl:w-[70px] w-[60px] 2xl:h-[80px] xl:h-[70px] h-[60px] cursor-pointer"
+        className="mx-auto 2xl:w-[80px] xl:w-[70px] w-[60px] 2xl:h-[80px] xl:h-[70px] h-[60px] cursor-pointer hover:scale-[1.05]"
         width={80}
         height={80}
       />
