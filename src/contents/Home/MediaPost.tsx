@@ -42,13 +42,15 @@ export const MediaPost = () => {
           <div className="font-Inter font-[600] text-[#F4F4F4] 2xl:text-[28px] xl:text-[24px] text-[18px] z-10">
             DESCRIPTION:
           </div>
-          <textarea
-            className="w-[80%] 2xl:h-[170px] xl:h-[140px] h-[100px] bg-[#BFBFBF] rounded-[20px] p-[10px] 2xl:mb-[15px] mb-[7px] z-10 resize-none text-[#000000] font-[600] 2xl:text-[20px] xl:text-[16px] text-[12px] overflow-hidden"
+          <div
+            className="relative w-[80%] 2xl:h-[170px] xl:h-[140px] h-[100px] 2xl:mb-[15px] mb-[7px]"
             style={{
-              textOverflow: "ellipsis",
               height: "calc(100% - 40px)",
             }}
-          />
+          >
+            <textarea className="absolute top-0 left-0 w-full h-full p-[10px] bg-transparent rounded-[20px] z-10 resize-none text-[#000000] font-[600] 2xl:text-[20px] xl:text-[16px] text-[12px] overflow-hidden" />
+            <div className="absolute w-full h-full top-0 left-0 rounded-[20px] bg-[#BFBFBF] blur-[2px] z-1"></div>
+          </div>
         </div>
         <div
           className="2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px] bg-formback rounded-[13px] mx-auto border-[2px] border-[#949494] flex justify-center items-center font-Inter font-[600] text-textwhite 2xl:text-[18px] xl:text-[16px] text-[12px] cursor-pointer"

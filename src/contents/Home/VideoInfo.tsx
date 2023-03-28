@@ -15,7 +15,8 @@ export const VideoInfo = () => {
       </div>
       <div className="mt-[8px] w-full border-[1px]  border-[#5E5E5E] z-10"></div>
       <div className="2xl:h-[200px] xl:h-[200px] lg:h-[200px] h-[250px] flex mx-[13px] mt-[7px] relative p-[12px]">
-        <div className="absolute w-full h-full top-0 left-0 rounded-[20px] border-[2px] border-borderwhite bg-formback blur-[2px]"></div>
+        {/* <div className="absolute w-full h-full top-0 left-0 rounded-[20px] border-[2px] border-borderwhite bg-formback blur-[2px]"></div> */}
+        <div className="absolute w-full h-full top-0 left-0 rounded-[20px] bg-formback blur-[2px]"></div>
         <div className="font-[700] 2xl:text-[20px] xl:text-[16px] text-[12px] text-textwhite z-20">
           Video description comes here.
         </div>
