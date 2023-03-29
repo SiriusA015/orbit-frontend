@@ -2,7 +2,7 @@ import { BaseLayout } from "../../layouts/BaseLayout";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-import ButtonPrimary from "component/Button/ButtonPrimary";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 
 const LoginPage = () => {
   const router = useRouter();

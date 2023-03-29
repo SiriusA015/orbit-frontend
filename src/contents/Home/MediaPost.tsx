@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import ButtonPrimary from "component/Button/ButtonPrimary";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 
 export const MediaPost = () => {
   const router = useRouter();

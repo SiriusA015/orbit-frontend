@@ -1,4 +1,4 @@
-import ButtonPrimary from "component/Button/ButtonPrimary";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 import Image from "next/image";
 
 export const Create = () => {

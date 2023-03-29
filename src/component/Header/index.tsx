@@ -1,13 +1,17 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import ButtonPrimary from "component/Button/ButtonPrimary";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
+import { useState } from "react";
+import ModalSetting from "component/ModalSetting/ModalSetting";
 
 function Header() {
+  const [isSetting, setIsSetting] = useState(false);
   const router = useRouter();
   const onConnect = () => {
     router.push("/auth/login");
   };
-
+  const openModalSetting = () => setIsSetting(true);
+  const closeModalSetting = () => setIsSetting(false);
   return (
     <>
       <div className="2xl:h-[120px] h-[90px] flex justify-between items-center 2xl:px-[172px] xl:px-[140px] lg:px-[100px] md:px-[60px] px-[30px] relative">
@@ -23,8 +27,13 @@ function Header() {
             alt="setting"
             src="/static/images/icons/setting.png"
             className="absolute bottom-0 lg:left-[-25px] md:left-[-15px] left-[-10px] cursor-pointer 2xl:w-[20px] w-[15px] 2xl:h-[20px] h-[15px]"
+            onClick={openModalSetting}
             width={20}
             height={20}
+          />
+          <ModalSetting
+            show={isSetting}
+            onCloseModalSetting={closeModalSetting}
           />
         </div>
         <div className="absolute 2xl:w-[96px] w-[70px] 2xl:h-[96px] h-[70px] mx-auto left-0 right-0">

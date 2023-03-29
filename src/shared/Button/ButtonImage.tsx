@@ -5,6 +5,7 @@ export interface ButtonProps {
   className?: string;
   translate?: string;
   sizeClass?: string;
+  rounded?: number;
   fontSize?: string;
   //
   loading?: boolean;
@@ -19,12 +20,13 @@ const ButtonImage: FC<ButtonProps> = ({
   className = "",
   translate = "",
   sizeClass = "2xl:w-[100px] xl:w-[80px] w-[70px] 2xl:h-[40px] xl:h-[35px] h-[30px]",
+  rounded = 15,
   children,
   type,
   loading,
   onClick = () => {},
 }) => {
-  const CLASSES = `nc-Button relative flex justify-center items-center cursor-pointer ${sizeClass} ${translate} ${className} `;
+  const CLASSES = `nc-Button relative flex justify-center items-center cursor-pointer overflow-hidden rounded-[${rounded}px] ${sizeClass} ${translate} ${className} `;
 
   const _renderLoading = () => {
     return (
@@ -55,7 +57,9 @@ const ButtonImage: FC<ButtonProps> = ({
     <div className={`${CLASSES}`} onClick={onClick}>
       {loading && _renderLoading()}
       {children || `This is Button`}
-      <div className="2xl:visible invisible absolute top-0 left-0 w-full h-full rounded-[15px] border-[2px] border-[#949494] hover:border-[#c7c7c7] z-10 bg-transparent"></div>
+      <div
+        className={`2xl:visible invisible absolute top-0 left-0 w-full h-full rounded-[${rounded}px] border-[2px] border-[#949494] hover:border-[#c7c7c7] z-10 bg-transparent`}
+      ></div>
     </div>
   );
 };

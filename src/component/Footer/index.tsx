@@ -1,4 +1,4 @@
-import ButtonImage from "component/Button/ButtonImage";
+import ButtonImage from "shared/Button/ButtonImage";
 import Image from "next/image";
 
 function Footer() {
