@@ -2,6 +2,7 @@ import { BaseLayout } from "../../layouts/BaseLayout";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -82,12 +83,14 @@ const LoginPage = () => {
                   />
                 </div>
               </div>
-              <div
-                className="2xl:w-[200px] xl:w-[160px] w-[120px] 2xl:h-[67px] xl:h-[60px] h-[50px] mt-[52px] bg-formback rounded-[20px] border-[2px] border-borderwhite font-[600] 2xl:text-[30px] xl:text-[22px] lg:text-[18px] text-[12px] text-textwhite z-10 flex justify-center items-center cursor-pointer"
+              <ButtonPrimary
+                sizeClass="mt-[52px] 2xl:w-[200px] xl:w-[160px] w-[120px] 2xl:h-[67px] xl:h-[60px] h-[50px]"
+                fontSize="font-[600] 2xl:text-[30px] xl:text-[22px] lg:text-[18px] text-[12px]"
+                className="rounded-[20px] z-10"
                 onClick={onLogin}
               >
                 LOGIN
-              </div>
+              </ButtonPrimary>
               <div
                 className="absolute bottom-[13px] right-[23px] font-[600] text-[12px]"
                 style={{ color: "rgba(244, 244, 244, 0.5)" }}
